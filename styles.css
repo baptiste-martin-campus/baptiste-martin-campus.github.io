@@ -1,0 +1,59 @@
+img {
+    width: 100%;
+}
+
+.bg-cyan {
+    background-color: rgb(0, 169, 157);
+}
+
+.bg-green {
+    background-color: #759B89;
+}
+
+.text-green {
+    color: #759B89;
+}
+
+.nav-active {
+    background-color: #759B89;
+    border-radius: 15px;
+    box-shadow: rgb(80, 80, 80) 0px 0px 5px;
+}
+
+h1 {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.card {
+    width: 25%;
+}
+
+.carousel-item>img {
+    width: 100px;
+    margin: 0 auto;
+}
+
+ol {
+    list-style: none;
+}
+
+ol>li>img {
+    width: 50px;
+}
+
+.form-group {
+    padding-bottom: 20px;
+}
+
+.form-group>label {
+    tcolor
+}
+
+.contact {
+    top: 56px;
+}
+
+.hobby {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 60%, rgba(117, 155, 137, 1) 60%);
+}
