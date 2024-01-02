@@ -53,7 +53,7 @@ Une fois votre maquette avancée, présentez votre maquette au formateur.
 https://mattfarley.ca/
 
 - Exemples de maquettage papier, une collection d'exemples https://whatpixel.com/instagram-ux-sketches-wireframes/
-- 
+  
 ------------------------------------------------------
 
 ###**1.2 — Créer ses premières pages**
@@ -106,8 +106,7 @@ https://developer.mozilla.org/fr/docs/Apprendre
 - Tutoriels CSS
 https://www.codecademy.com/learn/learn-css
 - Le tutoriel GrafikArt, en francais et bien expliqué
-https://www.youtube.com/watch?v=PE8FQ6zihhw&list=PLjwdMgw5TTLVjTZQocrMwKicV5wsZl
-Rpj
+https://www.youtube.com/watch?v=PE8FQ6zihhw&list=PLjwdMgw5TTLVjTZQocrMwKicV5wsZlRpj
 - Le validateur W3C pour documents CSS
 http://jigsaw.w3.org/css-validator/#validate_by_upload
 
@@ -139,14 +138,12 @@ Quelques idées/ suggestions ici :
 <p style="color: #0b59b0;">RESSOURCES</p>
 
 - Débuter avec les formulaires HTML
-https://developer.mozilla.org/fr/docs/Web/Guide/HTML/Formulaires/Mon_premier_formulaire_H
-TML
+https://developer.mozilla.org/fr/docs/Web/Guide/HTML/Formulaires/Mon_premier_formulaire_HTML
 - Le modèle de boîte
 https://developer.mozilla.org/fr/docs/Apprendre/CSS/Building_blocks/Le_modele_de_boite
 - The CSS box model https://www.cours-web.ch/css/box-model.html
 - Envoyer et extraire les données des formulaires :
-https://developer.mozilla.org/fr/docs/Web/Guide/HTML/Formulaires/Envoyer_et_extraire_les_do
-nn%C3%A9es_des_formulaires
+https://developer.mozilla.org/fr/docs/Web/Guide/HTML/Formulaires/Envoyer_et_extraire_les_donn%C3%A9es_des_formulaires
 
 ------------------------------------------------------
 
