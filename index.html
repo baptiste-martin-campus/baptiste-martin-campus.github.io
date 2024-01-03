@@ -13,11 +13,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
-  <header class="">
+  <div id="filter" class="position-fixed top-0 bottom-0 start-0 end-0 text-center">
+    <div id="module" style="padding-top: 300px;">
+      <span class="text-light mb-4" style="font-size: 80px;">Module HTML - CSS</span><br>
+      <span class="text-green mb-4 fs-3">Projet Portfolio</span><br>
+      <p class="text-light mb-4">Pour voir les consignes de l'exercice : c'est <a
+          href="https://github.com/baptiste-martin-campus/portfolio" target="_blank">içi</a></p><br>
+      <button id="btnFilter" class="btn btn-green">OK</button>
+    </div>
+  </div>
+
+  <header class="main-head">
     <div class="container d-flex justify-content-between">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,86 +48,107 @@
 
   <section class="bg-green">
     <div class="container">
-      <div class="row" style="padding:100px 0;">
-        <div class="col-6">
+      <div class="row md-flex-column-reverse" style="padding:100px 0;">
+        <div class="col-12 col-md-8">
           <h1 class="text-light">Concepteur Développeur d'Applications</h1>
-          <br /><span class="text-light">Içi ça build les apps</span>
+          <br />
+          <h2 class="text-light">Baptiste Martin</h2>
+          <br />
+          <span class="text-light">Créateur d'applications et sites webs</span>
         </div>
-        <div class="col-6 text-center">
-          <img class="rounded-pill w-25 border border-dark-subtle border-2 shadow" src="./img/unnamed.png"
-            alt="photo" />
+        <div class="col-12 col-md-4 text-center">
+          <img id="pdp" class="rounded-pill w-50 border border-dark-subtle border-2 shadow pdp" src="./img/unnamed.png"
+            alt="photo" onmouseenter="playSound()" onmouseleave="stopSound()" />
         </div>
+        <audio id="audio" preload="auto">
+          <source src="audio/pas-touche.mp3" type="audio/mp3">
+        </audio>
       </div>
     </div>
   </section>
   <section class="description" style="padding:100px 0;">
     <div class="container">
-      <p class="text-center px-4">
-        <strong> Hello everyone, <br /></strong> Je m'appelle Baptiste Martin,
+      <p class="text-center px-4 py-2 bg-light speech">
+        <strong class="fs-4"> Hello everyone, <br /></strong> Je m'appelle Baptiste Martin,
         ancien pilote de vaisseau spatial et chasseur de primes du cosmos, je
         me suis reconverti en tant que
         <span class="text-green"> Concepteur Développeur d'Applications</span>
       </p>
-      <div class="text-center">
-        <img class="w-50" src="https://puka1701.files.wordpress.com/2012/05/celestusrotate.gif" alt="" />
+      <div class="position-absolute top-0 end-0 wow"><img src="https://i.gifer.com/6mb.gif" alt="wow meme"></div>
+      <div class="position-absolute top-0 start-0 snoop"><img src="https://i.gifer.com/X11G.gif" alt="snoop dogg meme">
       </div>
-    </div>
+      <div class="position-absolute top-50 start-0 jcvd"><img
+          src="https://24.media.tumblr.com/89f4fd80858b93e35062b860410ee57b/tumblr_n1qp37LVQE1s5gjtho1_500.gif"
+          alt="jcvd meme">
+      </div>
+      <div class="position-absolute bottom-0 end-0 callof"><img
+          src="https://img1.picmix.com/output/stamp/normal/5/3/9/2/1962935_843fc.gif" alt="call of duty gun meme">
+      </div>
+      <div class="position-absolute top-0 bottom-0 end-0 start-0 hit"><img
+          src="https://media.tenor.com/qkBhP0wm4OIAAAAi/hitmarker-spam.gif" alt="hitmarkers meme">
+      </div>
+      <div class="text-center planete">
+        <img class="w-50" src="https://cdn.pixabay.com/animation/2022/12/19/10/08/10-08-46-442_512.gif" alt="planète" />
+      </div>
   </section>
   <section class="skills">
-    <div class="d-flex justify-content-around align-items-start text-center">
-      <div class="card p-2" style="margin-top: 50px;">
-        <span class="material-symbols-outlined fs-1">
-          edit
-        </span>
-        <div class="card-body">
-          <h3 class="card-title">Design</h3>
-          <p class="card-text text-start">
-            Grâce à mes compétences acquises durant mon année en tant qu' <strong>Infographiste - Web Designer</strong>,
-            je peux apporter
-            une touche moderne sur mes projets. <br>
-            Je peux aussi créer des visuels, documents ou logos grâce aux logiciels Adobe :
-          <ol class="d-flex align-items-center justify-content-around">
-            <li><img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png"
-                alt="photoshop"></li>
-            <li><img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1200px-Adobe_Illustrator_CC_icon.svg.png"
-                alt="illustrator"></li>
-            <li><img src="https://qualitytraining.be/content/uploads/2022/07/formation-breautique-indesign-2.png"
-                alt="indesign"></li>
-          </ol>
-          </p>
+    <div class="container">
+      <div class="row justify-content-around">
+        <div class="card col-12 col-lg-3 p-4 mt-0 mt-lg-5">
+          <span class="material-symbols-outlined fs-1 text-center">
+            edit
+          </span>
+          <div class="card-body">
+            <h3 class="card-title text-center">Design</h3>
+            <p class="card-text text-start">
+              Grâce à mes compétences acquises durant mon année en tant qu' <strong>Infographiste - Web
+                Designer</strong>,
+              je peux apporter
+              une touche moderne sur mes projets. <br>
+              Je peux aussi créer des visuels, documents ou logos grâce aux logiciels Adobe :
+            <ol class="d-flex align-items-center justify-content-around p-0">
+              <li><img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png"
+                  alt="photoshop"></li>
+              <li><img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1200px-Adobe_Illustrator_CC_icon.svg.png"
+                  alt="illustrator"></li>
+              <li><img src="https://www.altam.fr/wp-content/uploads/2021/10/IndESIGN-LOGO.png" alt="indesign"></li>
+            </ol>
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="card p-2 text-light" style="background-color: #759B89;">
-        <span class="material-symbols-outlined fs-1">
-          code
-        </span>
-        <div class="card-body">
-          <h3 class="card-title">Front-End</h3>
-          <p class="card-text  text-start">
-            Je créé des projets en <strong>Front-End</strong> qui offrent une bonne expérience aux utilisateurs. <br>
+        <div class="card col-12 col-lg-3 p-4 my-5 mb-lg-5 my-lg-0">
+          <span class="material-symbols-outlined fs-1 text-center">
+            code
+          </span>
+          <div class="card-body">
+            <h3 class="card-title text-center">Front-End</h3>
+            <p class="card-text  text-start">
+              Je créé des projets en <strong>Front-End</strong> qui offrent une bonne expérience aux utilisateurs. <br>
 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nobis, architecto officia nulla
-            quibusdam qui, cum iure, magnam laboriosam accusamus fugit unde accusantium dolor. Autem numquam accusantium
-            fugiat fuga similique?
-          </p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nobis, architecto officia nulla
+              quibusdam qui, cum iure, magnam laboriosam accusamus fugit unde accusantium dolor. Autem numquam
+              accusantium
+              fugiat fuga similique?
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="card p-2" style="margin-top: 50px;">
-        <span class="material-symbols-outlined fs-1">
-          stacks
-        </span>
-        <div class="card-body">
-          <h3 class="card-title">Back-End</h3>
-          <p class="card-text  text-start">
-            Je créé des projets en <strong>Back-End</strong> qui reste caché aux utilisateurs. <br>
+        <div class="card col-12 col-lg-3 p-4 mt-0 mt-lg-5">
+          <span class="material-symbols-outlined fs-1 text-center">
+            stacks
+          </span>
+          <div class="card-body">
+            <h3 class="card-title text-center">Back-End</h3>
+            <p class="card-text  text-start">
+              Je créé des projets en <strong>Back-End</strong> qui reste caché aux utilisateurs. <br>
 
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Doloribus magnam, expedita aperiam eum nam quae vero sequi atque
-            numquam tempora hic fugit pariatur praesentium non! Dignissimos,
-            autem eligendi! Illum, reprehenderit!
-          </p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Doloribus magnam, expedita aperiam eum nam quae vero sequi atque
+              numquam tempora hic fugit pariatur praesentium non! Dignissimos,
+              autem eligendi! Illum, reprehenderit!
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -126,37 +156,45 @@
   <section style="background-color: #dae4df; margin-top: -100px; padding-top: 100px; padding-bottom: 100px;">
     <div class="container">
       <h4 class="text-center py-4">Langages et frameworks</h4>
-      <div id="carouselExampleControls" class="carousel slide" style="height:100px;" data-bs-ride="carousel">
+      <div id="carouselExampleControls" class="carousel slide" style="height:150px;" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active"><img class="d-block"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png"
-              alt="html"></div>
-          <div class="carousel-item"><img class="d-block"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/340px-CSS3_logo_and_wordmark.svg.png"
-              alt="css"></div>
-          <div class="carousel-item"><img class="d-block"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png"
-              alt="javascript"></div>
-          <div class="carousel-item"><img class="d-block"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png"
-              alt="php"></div>
-          <div class="carousel-item"><img class="d-block"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png"
-              alt="angular"></div>
-          <div class="carousel-item"><img class="d-block" src="https://symfony.com/logos/symfony_black_03.png"
-              alt="symfony"></div>
-          <div class="carousel-item"><img class="d-block"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1969px-Laravel.svg.png"
-              alt="laravel"></div>
-          <div class="carousel-item"><img class="d-block"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
-              alt="react"></div>
-          <div class="carousel-item"><img class="d-block"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png"
-              alt="vue"></div>
-          <div class="carousel-item"><img class="d-block"
-              src="https://static.vecteezy.com/system/resources/previews/020/975/579/non_2x/wordpress-logo-wordpress-icon-transparent-free-png.png"
-              alt="wordpress"></div>
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-around align-items-center mx-auto" style="width: 10%;">
+              <img class="d-block"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png"
+                alt="html">
+              <img class="d-block"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
+                alt="css">
+              <img class="d-block"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png"
+                alt="javascript">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-around align-items-center mx-auto" style="width: 10%;">
+              <img class="d-block"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png"
+                alt="php">
+              <img class="d-block"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png"
+                alt="angular">
+              <img class="d-block" src="https://cdn.worldvectorlogo.com/logos/symfony.svg" alt="symfony">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-around align-items-center mx-auto" style="width: 10%;">
+              <img class="d-block"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1969px-Laravel.svg.png"
+                alt="laravel"><img class="d-block"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                alt="react"><img class="d-block"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png"
+                alt="vue"><img class="d-block"
+                src="https://static.vecteezy.com/system/resources/previews/020/975/579/non_2x/wordpress-logo-wordpress-icon-transparent-free-png.png"
+                alt="wordpress">
+            </div>
+          </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
           data-bs-slide="prev">
@@ -171,10 +209,95 @@
       </div>
     </div>
   </section>
+
+  <div class="git position-fixed end-0 bottom-0 p-4" style="width: 100px;">
+    <a href="https://github.com/baptiste-martin-campus" title="Github" target="_blank"><img
+        src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+      </img></a>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 
+  <script>
+    // left: 37, up: 38, right: 39, down: 40,
+    // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+    var keys = { 32: 1, 37: 1, 38: 1, 39: 1, 40: 1 };
+
+    function preventDefault(e) {
+      e.preventDefault();
+    }
+
+    function preventDefaultForScrollKeys(e) {
+      if (keys[e.keyCode]) {
+        preventDefault(e);
+        return false;
+      }
+    }
+
+    // modern Chrome requires { passive: false } when adding event
+    var supportsPassive = false;
+    try {
+      window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+        get: function () { supportsPassive = true; }
+      }));
+    } catch (e) { }
+
+    var wheelOpt = supportsPassive ? { passive: false } : false;
+    var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+
+    // call this to Disable
+    function disableScroll() {
+      window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
+      window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+      window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
+      window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+    }
+
+    // call this to Enable
+    function enableScroll() {
+      window.removeEventListener('DOMMouseScroll', preventDefault, false);
+      window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
+      window.removeEventListener('touchmove', preventDefault, wheelOpt);
+      window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+    }
+
+    let btnFilter = document.getElementById("btnFilter");
+    let filter = document.getElementById("filter");
+    let body = document.querySelector("body");
+    let text = document.getElementById("module");
+
+    window.onload = function () {
+      body.style.overflowY = "hidden";
+      disableScroll();
+      text.style.opacity = "1";
+    }
+
+    btnFilter.addEventListener("click", (e => {
+      e.preventDefault();
+      body.style.overflowY = "auto";
+      filter.style.opacity = "0";
+      setTimeout(function () {
+        filter.remove()
+      }, 2500)
+      enableScroll();
+    }))
+  </script>
+
+  <script>
+    let audio = document.getElementById("audio");
+    let img = document.getElementById("pdp");
+
+    function playSound() {
+      audio.play();
+    }
+
+    function stopSound() {
+      audio.pause();
+      audio.currentTime = 0;
+    }
+  </script>
 </body>
 
 </html>

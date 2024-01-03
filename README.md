@@ -1,10 +1,12 @@
-#<p class="text-center" style="color: #0b59b0;">PROJET PORTFOLIO</p>
+#**PROJET PORTFOLIO**
 
 ##**Objectif Global**
+
 Concevoir et développer en équipe l’interface d’un site web statique en HTML5 et CSS3, adaptée
 aux besoins du projet et compatible sur différents appareils.
 
 ##**Objectifs pédagogiques**
+
 - Créer des éléments d'interface web standards avec des balises HTML.
 - Utiliser les attributs et balises HTML5 dans le respect des standards.
 - Mettre en forme du texte et des blocs grâce aux principales propriétés CSS.
@@ -14,11 +16,13 @@ de l'utilisateur.
 - Élargir ses compétences générales en développement web.
 
 ##**Démarche pédagogique**
+
 Au cours de ce module, vous réaliserez individuellement un projet web de site personnel. Le temps
 d’apprentissage au cours de ce module est succinct, servez de ce module comme un moyen de faire
 un état des lieux de vos compétences
 
 ##**Compétences**
+
 Ce module est un module de remise à niveau, il ne sera pas soumis au processus de validation de
 compétences.
 
@@ -42,6 +46,7 @@ Vous avez le droit de vous inventer une vie si cet exercice vous met mal à l’
 ##**Déroulé du projet**
 
 ###**1.1 — Concevoir une maquette papier de votre portfolio**
+
 Avant de commencer le développement, vous allez réaliser une maquette de votre site qui
 respecte le cahier des charges. Une maquette est un dessin schématique de la mise en page à
 l’échelle du site. Du papier et des feutres vous sont fournis.
@@ -49,6 +54,7 @@ l’échelle du site. Du papier et des feutres vous sont fournis.
 Une fois votre maquette avancée, présentez votre maquette au formateur.
 
 **RESSOURCES**
+
 - Exemple de portfolio simple et efficace :
 https://mattfarley.ca/
 
@@ -57,6 +63,7 @@ https://mattfarley.ca/
 ------------------------------------------------------
 
 ###**1.2 — Créer ses premières pages**
+
 Créez dans un nouveau dossier le fichier html de votre page **« portfolio »**, en le nommant
 index.html. Ouvrez votre dossier avec VSCode et éditez le fichier index.html depuis ce
 logiciel.

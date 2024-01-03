@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header class="">
+    <header class="main-head">
         <div class="container d-flex justify-content-between">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -36,19 +36,20 @@
             </nav>
         </div>
     </header>
+
     <section class="hobby">
         <div class="container">
             <article>
                 <h1 class="text-center mb-4">Hobby</h1>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div style="width: 69%;">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-12 col-xl-8" style="margin-bottom: 100px;">
                         <iframe width="760" height="415"
                             src="https://www.youtube.com/embed/8r-5v_aZ5B4?si=adgOB66E75RGmQJQ"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
                     </div>
-                    <div class="text-light" style="width: 29%;">
+                    <div class="col-12 col-xl-4 text-light">
                         <aside>
                             <h4>Paroles</h4>
                             <p class="paragraphe fs-6">
@@ -117,6 +118,13 @@
             </article>
         </div>
     </section>
+
+    <div class="git position-fixed end-0 bottom-0 p-4" style="width: 100px;">
+        <a href="https://github.com/baptiste-martin-campus" title="Github" target="_blank"><img
+                src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+            </img></a>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>

@@ -2,6 +2,19 @@ img {
     width: 100%;
 }
 
+#filter {
+    z-index: 999999;
+    background-color: rgba(0, 0, 0, 0.75);
+    font-family: 'Varela Round', sans-serif;
+    opacity: 1;
+    transition: 3s;
+}
+
+#module {
+    transition: 5s;
+    opacity: 0;
+}
+
 .bg-cyan {
     background-color: rgb(0, 169, 157);
 }
@@ -10,27 +23,85 @@ img {
     background-color: #759B89;
 }
 
+.btn-green {
+    background-color: #759B89 !important;
+    color: white !important;
+}
+
 .text-green {
     color: #759B89;
+}
+
+.pdp {
+    transition: 1s
+}
+
+.pdp:hover {
+    transition: 8s;
+    transform: rotate(360deg);
 }
 
 .nav-active {
     background-color: #759B89;
     border-radius: 15px;
     box-shadow: rgb(80, 80, 80) 0px 0px 5px;
+    color: white !important;
 }
 
 h1 {
     font-family: 'Varela Round', sans-serif;
 }
 
+.description {
+    background-image: url("https://media.tenor.com/ZDe0dPKLr3AAAAAi/raining-money-money.gif");
+    background-size: cover;
+    background-blend-mode: color-burn;
+    filter: saturate(10);
+}
+
+.speech {
+    z-index: 999;
+}
+
+.wow {
+    transform: rotate(180deg);
+    transform: rotateX(180deg);
+    filter: saturate(5%);
+}
+
+.snoop {
+    transform: rotate(90deg);
+}
+
+.jcvd {
+    filter: saturate(5%);
+}
+
+.callof {
+    filter: saturate(5%);
+}
+
+.hit {
+    filter: saturate(5%);
+}
+
 .card {
     width: 25%;
+    border: none;
+    box-shadow: black 0px 5px 10px;
 }
 
 .carousel-item>img {
     width: 100px;
     margin: 0 auto;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 
 ol {
@@ -45,15 +116,30 @@ ol>li>img {
     padding-bottom: 20px;
 }
 
-.form-group>label {
-    tcolor
+.skills .card {
+    color: black;
+    transition: 1s;
+}
+
+.skills .card:hover {
+    transition: 1s;
+    color: white;
+    background-color: #759B89;
 }
 
 .contact {
-    top: 56px;
+    padding: 50px 0 150px 0;
+    overflow-y: hidden;
 }
 
 .hobby {
     background: rgb(255, 255, 255);
     background: linear-gradient(90deg, rgba(255, 255, 255, 1) 60%, rgba(117, 155, 137, 1) 60%);
+}
+
+@media only screen and (max-width : 1200px) {
+    .hobby {
+        background: rgb(255, 255, 255);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(117, 155, 137, 1) 30%);
+    }
 }
