@@ -56,41 +56,20 @@ table>thead>* {
     color: white !important;
 }
 
+.nav-active .nav-link {
+    color: white !important;
+}
+
+.card{
+    cursor: default;
+}
+
 h1 {
     font-family: 'Varela Round', sans-serif;
 }
 
-.description {
-    background-image: url("https://media.tenor.com/ZDe0dPKLr3AAAAAi/raining-money-money.gif");
-    background-size: cover;
-    background-blend-mode: color-burn;
-    filter: saturate(10);
-}
-
 .speech {
     z-index: 999;
-}
-
-.wow {
-    transform: rotate(180deg);
-    transform: rotateX(180deg);
-    filter: saturate(5%);
-}
-
-.snoop {
-    transform: rotate(90deg);
-}
-
-.jcvd {
-    filter: saturate(5%);
-}
-
-.callof {
-    filter: saturate(5%);
-}
-
-.hit {
-    filter: saturate(5%);
 }
 
 .card {
