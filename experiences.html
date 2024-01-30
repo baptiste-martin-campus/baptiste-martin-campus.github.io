@@ -16,16 +16,6 @@
 </head>
 
 <body>
-  <div id="filter" class="position-fixed top-0 bottom-0 start-0 end-0 text-center">
-    <div id="module" style="padding-top: 300px;">
-      <span class="text-light mb-4" style="font-size: 80px;">Module HTML - CSS</span><br>
-      <span class="text-green mb-4 fs-3">Projet Portfolio</span><br>
-      <p class="text-light mb-4">Pour voir les consignes de l'exercice : c'est <a
-          href="https://github.com/baptiste-martin-campus/portfolio" target="_blank">içi</a></p><br>
-      <button id="btnFilter" class="btn btn-green">OK</button>
-    </div>
-  </div>
-
   <header class="main-head position-sticky top-0 start-0 end-0 bg-light">
     <div class="container d-flex justify-content-between">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -235,7 +225,7 @@
             <!-- /wp:paragraph -->
 
             <!-- wp:paragraph -->
-            <p><strong>Identification de l'entreprise :</strong> <span class="ff_dynamic_value" data-ref="forme_juridique" data-fallback=""></span> <span class="ff_dynamic_value" data-ref="nom_proprietaire" data-fallback="">Martin Baptiste - Campus numérique In the Alps</span> au capital social de <span class="ff_dynamic_value" data-ref="capital_social" data-fallback=""></span>€ - SIREN : <span class="ff_dynamic_value" data-ref="siren" data-fallback=""></span> - RCS ou RM : <span class="ff_dynamic_value" data-ref="rcs" data-fallback=""></span> - Adresse postale : <span class="ff_dynamic_value" data-ref="adresse_postale" data-fallback=""></span> - <span class="ff_dynamic_value" data-ref="cgv" data-fallback=""></span> <span style="color: #ff0000">[Consignes : ajoutez ici le lien hypertexte vers la page de vos conditions générales de vente si vous en avez une]</span></p>
+            <p><strong>Identification de l'entreprise :</strong> <span class="ff_dynamic_value" data-ref="forme_juridique" data-fallback=""></span> <span class="ff_dynamic_value" data-ref="nom_proprietaire" data-fallback="">Martin Baptiste - Campus numérique In the Alps</span> au capital social de <span class="ff_dynamic_value" data-ref="capital_social" data-fallback=""></span>€ - SIREN : <span class="ff_dynamic_value" data-ref="siren" data-fallback=""></span> - RCS ou RM : <span class="ff_dynamic_value" data-ref="rcs" data-fallback=""></span> - Adresse postale : <span class="ff_dynamic_value" data-ref="adresse_postale" data-fallback=""></span> - <span class="ff_dynamic_value" data-ref="cgv" data-fallback=""></span> </p>
             <!-- /wp:paragraph -->
 
             <!-- wp:paragraph -->
@@ -309,7 +299,7 @@
             <!-- /wp:paragraph -->
 
             <!-- wp:paragraph -->
-            <p>Pour plus d'informations sur la façon dont nous traitons vos données (type de données, finalité, destinataire...), lisez notre <strong><span class="ff_dynamic_value" data-ref="politique_confidentialite" data-fallback="">https://baptiste-martin-campus.github.io/politique-confidentialite</span></strong>. <span style="color: #ff0000">[Consignes : ajoutez ici le lien hypertexte vers votre politique de confidentialité]</span></p>
+            <p>Pour plus d'informations sur la façon dont nous traitons vos données (type de données, finalité, destinataire...), lisez notre <strong><span class="ff_dynamic_value" data-ref="politique_confidentialite" data-fallback="">https://baptiste-martin-campus.github.io/politique-confidentialite</span></strong>.</p>
             <!-- /wp:paragraph -->
 
             <!-- wp:separator --><hr class="wp-block-separator"><!-- /wp:separator -->
@@ -339,7 +329,7 @@
             <!-- /wp:paragraph -->
 
             <!-- wp:paragraph -->
-            <p>Pour plus d'informations sur la façon dont nous faisons usage des cookies, lisez notre <strong><span class="ff_dynamic_value" data-ref="politique_confidentialite" data-fallback="">https://baptiste-martin-campus.github.io/politique-confidentialite</span></strong>. <span style="color: #ff0000">[Consignes : ajoutez ici le lien hypertexte vers votre politique de confidentialité ou vers votre politique de cookies si vous en avez une (c'est le cas si vous utilisez Complianz)]</span></p>
+            <p>Pour plus d'informations sur la façon dont nous faisons usage des cookies, lisez notre <strong><span class="ff_dynamic_value" data-ref="politique_confidentialite" data-fallback="">https://baptiste-martin-campus.github.io/politique-confidentialite</span></strong></p>
             <!-- /wp:paragraph -->
 
             <!-- wp:separator --><hr class="wp-block-separator"><!-- /wp:separator -->
@@ -394,56 +384,6 @@
     var wheelOpt = supportsPassive ? { passive: false } : false;
     var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
 
-    // call this to Disable
-    function disableScroll() {
-      window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
-      window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
-      window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
-      window.addEventListener('keydown', preventDefaultForScrollKeys, false);
-    }
-
-    // call this to Enable
-    function enableScroll() {
-      window.removeEventListener('DOMMouseScroll', preventDefault, false);
-      window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
-      window.removeEventListener('touchmove', preventDefault, wheelOpt);
-      window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
-    }
-
-    let btnFilter = document.getElementById("btnFilter");
-    let filter = document.getElementById("filter");
-    let body = document.querySelector("body");
-    let text = document.getElementById("module");
-
-    window.onload = function () {
-      body.style.overflowY = "hidden";
-      disableScroll();
-      text.style.opacity = "1";
-    }
-
-    btnFilter.addEventListener("click", (e => {
-      e.preventDefault();
-      body.style.overflowY = "auto";
-      filter.style.opacity = "0";
-      setTimeout(function () {
-        filter.remove()
-      }, 2500)
-      enableScroll();
-    }))
-  </script>
-
-  <script>
-    let audio = document.getElementById("audio");
-    let img = document.getElementById("pdp");
-
-    function playSound() {
-      audio.play();
-    }
-
-    function stopSound() {
-      audio.pause();
-      audio.currentTime = 0;
-    }
   </script>
 </body>
 
