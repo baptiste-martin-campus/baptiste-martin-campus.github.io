@@ -1,11 +1,11 @@
-#**PROJET PORTFOLIO**
+# PROJET PORTFOLIO
 
-##**Objectif Global**
+## Objectif Global
 
 Concevoir et développer en équipe l’interface d’un site web statique en HTML5 et CSS3, adaptée
 aux besoins du projet et compatible sur différents appareils.
 
-##**Objectifs pédagogiques**
+## Objectifs pédagogiques
 
 - Créer des éléments d'interface web standards avec des balises HTML.
 - Utiliser les attributs et balises HTML5 dans le respect des standards.
@@ -15,18 +15,18 @@ aux besoins du projet et compatible sur différents appareils.
 de l'utilisateur.
 - Élargir ses compétences générales en développement web.
 
-##**Démarche pédagogique**
+## Démarche pédagogique
 
 Au cours de ce module, vous réaliserez individuellement un projet web de site personnel. Le temps
 d’apprentissage au cours de ce module est succinct, servez de ce module comme un moyen de faire
 un état des lieux de vos compétences
 
-##**Compétences**
+## Compétences
 
 Ce module est un module de remise à niveau, il ne sera pas soumis au processus de validation de
 compétences.
 
-##**Cahier des charges du projet**
+## Cahier des charges du projet
 
 Votre portfolio personnel doit vous permettre de mettre en avant vos compétences. Il
 comportera : </br>
@@ -43,9 +43,9 @@ candidat
 Vous avez le droit de vous inventer une vie si cet exercice vous met mal à l’aise !
 </p>
 
-##**Déroulé du projet**
+## Déroulé du projet
 
-###**1.1 — Concevoir une maquette papier de votre portfolio**
+### 1.1 — Concevoir une maquette papier de votre portfolio
 
 Avant de commencer le développement, vous allez réaliser une maquette de votre site qui
 respecte le cahier des charges. Une maquette est un dessin schématique de la mise en page à
@@ -62,7 +62,7 @@ https://mattfarley.ca/
   
 ------------------------------------------------------
 
-###**1.2 — Créer ses premières pages**
+### 1.2 — Créer ses premières pages
 
 Créez dans un nouveau dossier le fichier html de votre page **« portfolio »**, en le nommant
 index.html. Ouvrez votre dossier avec VSCode et éditez le fichier index.html depuis ce
@@ -84,7 +84,7 @@ https://developer.mozilla.org/fr/docs/Apprendre
 
 ------------------------------------------------------
 
-###**1.3 — Diversifier les styles sur la page CV**
+### 1.3 — Diversifier les styles sur la page CV
 
 Afin de mieux structurer l'affichage de votre contenu et de découvrir de nouvelles propriétés CSS,
 les styles des éléments de votre page vont se diversifier.
@@ -119,7 +119,7 @@ http://jigsaw.w3.org/css-validator/#validate_by_upload
 
 ------------------------------------------------------
 
-###**1.4 — Créer d’autres pages de votre site**
+### 1.4 — Créer d’autres pages de votre site
 
 Vous allez maintenant créer de nouvelles pages, qui seront connectées les unes aux autres : le site
 permettra de naviguer de l’une à l’autre grâce à des liens hypertextes. Vous pouvez choisir quelles
@@ -154,7 +154,7 @@ https://developer.mozilla.org/fr/docs/Web/Guide/HTML/Formulaires/Envoyer_et_extr
 
 ------------------------------------------------------
 
-###**1.5 — Pour aller plus loin**
+### 1.5 — Pour aller plus loin
 
 Maintenant que votre site de base a été créé vous pouvez vous permettre d’aller plus loin. Encore
 une fois, voici quelques suggestions de concepts que vous pouvez aller creuser :
