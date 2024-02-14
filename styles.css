@@ -16,11 +16,11 @@ img {
 }
 
 table>* {
-    border-color: #29422e !important;
+    border-color: #095228 !important;
 }
 
 table>thead>* {
-    background-color: #29422e !important;
+    background-color: #095228 !important;
 }
 
 .bg-cyan {
@@ -28,16 +28,16 @@ table>thead>* {
 }
 
 .bg-green {
-    background-color: #29422e;
+    background-color: #095228;
 }
 
 .btn-green {
-    background-color: #29422e !important;
+    background-color: #095228 !important;
     color: white !important;
 }
 
 .text-green {
-    color: #29422e;
+    color: #095228;
 }
 
 .pdp {
@@ -50,9 +50,9 @@ table>thead>* {
 }
 
 .nav-active {
-    background-color: #29422e;
+    background-color: #095228;
     border-radius: 15px;
-    box-shadow: rgb(80, 80, 80) 0px 0px 5px;
+    box-shadow: rgb(80, 80, 80) 0 0 5px;
     color: white !important;
 }
 
@@ -111,7 +111,7 @@ ol>li>img {
 .skills .card:hover {
     transition: 1s;
     color: white;
-    background-color: #29422e;
+    background-color: #095228;
 }
 
 .contact {
