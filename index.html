@@ -16,6 +16,7 @@
 </head>
 
 <body>
+<!--
 <div id="filter" class="position-fixed top-0 bottom-0 start-0 end-0 text-center">
     <div id="module" style="padding-top: 300px;">
         <span class="text-light mb-4" style="font-size: 80px;">Module HTML - CSS</span><br>
@@ -25,8 +26,9 @@
         <button id="btnFilter" class="btn btn-green">OK</button>
     </div>
 </div>
+-->
 
-<header class="main-head position-sticky top-0 start-0 end-0 bg-light">
+<header class="main-head position-sticky top-0 start-0 end-0 bg-light" style="z-index: 9999;">
     <div class="container d-flex justify-content-between">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,18 +62,15 @@
             <div class="col-12 col-md-4 text-center">
                 <img id="pdp" class="rounded-pill w-50 border border-dark-subtle border-2 shadow pdp"
                      src="./img/pdp.png"
-                     alt="photo" onmouseenter="playSound()" onmouseleave="stopSound()"/>
+                     alt="photo"/>
             </div>
-            <audio id="audio" preload="auto">
-                <source src="audio/pas-touche.mp3" type="audio/mp3">
-            </audio>
         </div>
     </div>
 </section>
 <section class="description" style="padding:100px 0;">
     <div class="container">
         <p class="text-center px-4 py-2 speech">
-            <strong class="fs-4"> Hello everyone, <br/></strong> Je m'appelle Baptiste Martin,
+            <strong class="fs-4"> Hello world, <br/></strong> Je m'appelle Baptiste Martin,
             jeune
             <span class="text-green"> Concepteur Développeur d'Applications</span>
             en pleine soif de connaissances, je suis à la recherche d'une alternance de mars 2024 à mars 2025 pour valider mes compétences.
@@ -101,7 +100,7 @@
                         <li><img
                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1200px-Adobe_Illustrator_CC_icon.svg.png"
                                 alt="illustrator"></li>
-                        <li><img src="https://www.altam.fr/wp-content/uploads/2021/10/IndESIGN-LOGO.png" alt="indesign">
+                        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Adobe_InDesign_CC_icon.svg/512px-Adobe_InDesign_CC_icon.svg.png" alt="indesign">
                         </li>
                     </ol>
                 </div>
@@ -205,7 +204,6 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 
-<script src="script.js"></script>
 </body>
 
 </html>

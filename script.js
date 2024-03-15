@@ -64,16 +64,3 @@
 }, 2500)
     enableScroll();
 }))
-
-
-    let audio = document.getElementById("audio");
-    let img = document.getElementById("pdp");
-
-    function playSound() {
-        audio.play();
-    }
-
-    function stopSound() {
-        audio.pause();
-        audio.currentTime = 0;
-    }

@@ -40,15 +40,6 @@ table>thead>* {
     color: #095228;
 }
 
-.pdp {
-    transition: 1s
-}
-
-.pdp:hover {
-    transition: 8s;
-    transform: rotate(360deg);
-}
-
 .nav-active {
     background-color: #095228;
     border-radius: 15px;
